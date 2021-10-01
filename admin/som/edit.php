@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>KAWAL</title>
+        <title>JBL</title>
         <meta charset="utf-8" />
         <link rel="shortcut icon" href="../img/icono.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -24,38 +24,37 @@
 
                     <!-- Content -->
                     <?php
-                    include("../conexion.php");
-                    $id = $_GET['CLIid'];
-                    $con = "SELECT * FROM cliente where CLIid='" . $id . "'";
+                    include("../../conexion.php");
+                    $id = $_GET['SOMid'];
+                    $con = "SELECT * FROM somos where SOMid='" . $id . "'";
                     $act = mysqli_query($conexion, $con);
                     $datos = mysqli_num_rows($act);
                     if ($datos != 0) {
-                        $vCli = mysqli_fetch_row($act);
+                        $vSom = mysqli_fetch_row($act);
                         ?>
                         <div class="container">
-                            <form class="ap"  method="POST" enctype="multipart/form-data">
-                                <h1>Mostrar Cliente</h1>
-                                <input type="hidden" value="<?php echo $id; ?>" name="CLIid">
+                            <form class="ap"  method="POST" action="update.php" enctype="multipart/form-data">
+                                <h1>Actualizar &#191; qui&eacute;n somos &#63;</h1>
+                                <input type="hidden" value="<?php echo $id; ?>" name="SOMid">
                                 <div class="form-group">
-                                    <h3>Nombre</h3>
-                                    <input name="CLINombre" disabled type="text" id="CLINombre" placeholder="Nombre del Cliente" class="form-control" required="required" class="form-control" value="<?php echo $vCli[1]; ?>">
+                                    <h3>&#191; qui&eacute;n somos &#63;</h3>
+                                    <textarea name="SOMTexto" type="text" id="SOMTexto" placeholder="" class="form-control" required="required" class="form-control"> <?php echo $vSom[1]; ?></textarea>
                                     </br>
                                 </div>
+                              
                                 <div class="form-group">
-                                    <h3>Nit</h3>
-                                    <input name="CLINit" disabled type="text" id="CLINit" placeholder="Nit del Cliente" class="form-control" required="required" class="form-control" value="<?php echo $vCli[2]; ?>">
-                                    </br>
+                                    <input type="submit" name="Submit" value="Guardar" class="btn btn-primary" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <h3>Direcci&oacute;n</h3>
-                                    <input name="CLIDireccion" disabled type="text" id="CLIDireccion" placeholder="Nombre del Cliente" class="form-control" required="required" class="form-control" value="<?php echo $vCli[3]; ?>">
-                                    </br>
+                                    <h3></h3>
+                                    <input name="TIPid" type="hidden" id="TIPid" class="form-control" required="required" class="form-control" value="<?php echo $id; ?>">
                                 </div>
                             </form>
                         </div>
                         <?php
                     }
                     ?>
+
                 </div>
             </div>
 

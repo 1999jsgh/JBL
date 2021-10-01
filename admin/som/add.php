@@ -26,11 +26,11 @@
 
                     <div class="container">
                         <form class="ap" method="post" action="insert.php" enctype="multipart/form-data">
-                            <h1>Registrar Tipo de Venta</h1>
+                            <h1>Registrar &#191; qui&eacute;n somos &#63;</h1>
                             <div class="form-group">
-                                <h3>Tipo de Venta </h3>
-                                <input name="TIPNombre" type="text" id="TIPNombre" placeholder="Nombre del Tipo de Venta" class="form-control" required="required"
-                                       class="form-control">
+                                <h3>&#191;qui&eacute;n somos&#63;</h3>
+                                <textarea  name="SOMTexto" type="text" id="SOMTexto" placeholder="&#191;qui&eacute;n somos&#63;" class="form-control" required="required"
+                                       class="form-control"></textarea>
                                 </br>
                             </div>                                                  
                           

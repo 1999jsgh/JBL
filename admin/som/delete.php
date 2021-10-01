@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title>Cliente</title>
+        <title>Eliminar</title>
     </head>
     <?php
     include("../../conexion.php");
-    $conexion->query("DELETE FROM tipoventas WHERE TIPid = '" . $_GET['TIPid'] . "'");
+    $conexion->query("DELETE FROM somos WHERE SOMid = '" . $_GET['SOMid'] . "'");
     ?>
     <body>
     </body>
