@@ -20,7 +20,7 @@
                             </a>
                         </li>
                         <li class="nav-link" class="nav-item">
-                            <a href="../foo/index.php">
+                            <a href="../footer/index.php">
                             Footer
                             </a>
                         </li>
