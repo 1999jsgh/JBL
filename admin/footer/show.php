@@ -31,31 +31,25 @@
         include("../../conexion.php");
         $id = $_GET['USUid'];
         $con = "SELECT * FROM usuario WHERE USUid='" . $id . "'";
-        $RSInt = mysqli_query($conexion, "SELECT * FROM interes");
-        $NumInt = mysqli_num_rows($RSInt);
+        $RSFoo = mysqli_query($conexion, "SELECT * FROM footer");
+        $NumFoo = mysqli_num_rows($RSFoo);
         $act = mysqli_query($conexion, $con);
         $datos = mysqli_num_rows($act);
         if ($datos != 0) {
-          $vUsu = mysqli_fetch_row($act);
-          if ($vUsu[5] == 1) {
-            $vUsu[5] = "Masculino";
-        } elseif ($vUsu[5] == 2) {
-            $vUsu[5] = "Femenino";
-        }
         ?>
 
           <body>
             <div class="container">
               <form class="ap" method="POST" enctype="multipart/form-data">
-                <h1>Mostrar Usuario</h1>
-                <input type="hidden" value="<?php echo $id; ?>" name="USUid">
+                <h1>Datos de Footer</h1>
+                <input type="hidden" value="<?php echo $id; ?>" name="FOOid">
                 <div class="form-group">
-                  <h3>Nombres</h3>
+                  <h3>Direccion</h3>
                   <input name="USUNombre" disabled type="text" id="USUNombre" class="form-control" required="required" value="<?php echo $vUsu[1]; ?>">
                   <br>
                 </div>
                 <div class="form-group">
-                  <h3>Identificacion</h3>
+                  <h3>Telefono</h3>
                   <input name="USUIdentificacion" disabled type="text" id="USUIdentificacion" class="form-control" required="required" value="<?php echo $vUsu[2]; ?>">
                   <br>
                 </div>
@@ -65,7 +59,7 @@
                   <br>
                 </div>
                 <div class="form-group">
-                  <h3>Telefono</h3>
+                  <h3>Linkedln</h3>
                   <input name="USUTelefono" disabled type="text" id="USUTelefono" class="form-control" required="required" value="<?php echo $vUsu[4]; ?>">
                   <br>
                 </div>
@@ -74,26 +68,8 @@
                   <input name="USUSexo" disabled type="text" id="USUSexo" class="form-control" required="required" value="<?php echo $vUsu[5]; ?>">
                   <br>
                 </div>
-                <input type="hidden" value="<?php echo $id; ?>" name="PEDid">
-                            <div class="form-group">
-                                <h3>Interes</h3>
-                                <select name="INTid" disabled class="form-control">
-                                    <?php
-                                    if ($NumInt != 0) {
-                                        while ($vInt = mysqli_fetch_row($RSInt)) {
-                                    ?>
-                                            <option value="<?php echo $vInt[0]; ?>" <?php
-                                                                                        if ($vInt[0] == $vUsu[6]) {
-                                                                                            echo "selected";
-                                                                                        }
-                                                                                        ?>><?php echo $vInt[1]; ?></option>
-                                    <?php
-                                        }
-                                    }
-                                    ?>
-                                </select>
-                                </br>
-                            </div>
+                <input type="hidden" value="<?php echo $id; ?>" name="FOOid">
+                         
               </form>
             </div>
           </body>
