@@ -27,12 +27,12 @@
                     <!-- Content -->
                     <?php
                     include("../../conexion.php");
-                    $RSCli = mysqli_query($conexion, "SELECT * FROM tipoventas");
+                    $RSCli = mysqli_query($conexion, "SELECT * FROM somos");
                     $NumCli = mysqli_num_rows($RSCli);
                     ?>
                     <div class="container">
                         <div class="btn-group">
-                            <h1>Gestionar Tipo de Venta</h1>
+                            <h1>Gestionar &#191; qui&eacute;n somos &#63;</h1>
                             <div>
                                 <a href="add.php" class="button big">Agregar</a></p>
                             </div>
@@ -48,7 +48,7 @@
                                     </td>
                                    
                                     <td align="center">
-                                        <h3>Tipo De Venta</h3>
+                                        <h3>&#191; qui&eacute;n somos &#63;</h3>
                                     </td>
                                    
                                 </tr>
@@ -61,14 +61,14 @@
                                         <tr>
 
                                             <td align="center">
-                                                <a href="delete.php?TIPid=<?php echo $vCli[0] ?>" class="button big">
+                                                <a href="delete.php?SOMid=<?php echo $vCli[0] ?>" class="button big">
 
                                                     <i class="fas fa-trash"></i>
 
                                                 </a>
                                             </td>
                                             <td align="center">
-                                                <a href="edit.php?TIPid=<?php echo $vCli[0] ?>" class="button big">
+                                                <a href="edit.php?SOMid=<?php echo $vCli[0] ?>" class="button big">
 
                                                     <i class="fas fa-edit"></i>
 

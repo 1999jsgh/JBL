@@ -2,11 +2,11 @@
 
 include("../../conexion.php");
 
-$TIPNombre = $_POST['TIPNombre'];
+$SOMTexto = $_POST['SOMTexto'];
 
 
-$sql = "INSERT INTO tipoventas (TIPNombre)
-VALUES ('$TIPNombre')";
+$sql = "INSERT INTO somos (SOMTexto)
+VALUES ('$SOMTexto')";
 $resultado = $conexion->query($sql);
 $id_insert = $conexion->insert_id;
 
