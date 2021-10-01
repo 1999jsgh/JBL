@@ -16,47 +16,22 @@
                     <ul>
                         <li class="nav-link" class="nav-item">
                             <a href="../usu/index.php">
-                                Usuario
+                            Banner
                             </a>
                         </li>
                         <li class="nav-link" class="nav-item">
                             <a href="../foo/index.php">
-                                Footer
+                            Footer
                             </a>
                         </li>
                         <li  class="nav-item">
                             <a class="nav-link" href="../int/index.php">
-                                Intereses
+                            Portafolio
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../nav/index.php">
-                                Navbar
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../tipn/index.php">
-                                Tipo de Noticia
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../not/index.php">
-                                Noticia
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../sid/index.php">
-                                Sidebar
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../tipv/index.php">
-                                Tipo de Venta
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../ven/index.php">
-                                Venta
+                            Somos
                             </a>
                         </li>
                         <li class="nav-item">
