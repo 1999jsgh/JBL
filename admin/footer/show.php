@@ -29,13 +29,14 @@
         ?>
         <?php
         include("../../conexion.php");
-        $id = $_GET['USUid'];
-        $con = "SELECT * FROM usuario WHERE USUid='" . $id . "'";
+        $id = $_GET['FOOid'];
+        $con = "SELECT * FROM footer WHERE FOOid='" . $id . "'";
         $RSFoo = mysqli_query($conexion, "SELECT * FROM footer");
         $NumFoo = mysqli_num_rows($RSFoo);
         $act = mysqli_query($conexion, $con);
         $datos = mysqli_num_rows($act);
         if ($datos != 0) {
+          $vFoo = mysqli_fetch_row($act);
         ?>
 
           <body>
@@ -45,31 +46,41 @@
                 <input type="hidden" value="<?php echo $id; ?>" name="FOOid">
                 <div class="form-group">
                   <h3>Direccion</h3>
-                  <input name="USUNombre" disabled type="text" id="USUNombre" class="form-control" required="required" value="<?php echo $vUsu[1]; ?>">
+                  <input name="FOODireccion" disabled type="text" id="FOODireccion" class="form-control" required="required" value="<?php echo $vFoo[1]; ?>">
                   <br>
                 </div>
                 <div class="form-group">
                   <h3>Telefono</h3>
-                  <input name="USUIdentificacion" disabled type="text" id="USUIdentificacion" class="form-control" required="required" value="<?php echo $vUsu[2]; ?>">
+                  <input name="FOOTelefono" disabled type="text" id="FOOTelefono" class="form-control" required="required" value="<?php echo $vFoo[2]; ?>">
                   <br>
                 </div>
                 <div class="form-group">
                   <h3>Correo</h3>
-                  <input name="USUCorreo" disabled type="text" id="USUCorreo" class="form-control" required="required" value="<?php echo $vUsu[3]; ?>">
+                  <input name="FOOCorreo" disabled type="text" id="FOOCorreo" class="form-control" required="required" value="<?php echo $vFoo[3]; ?>">
+                  <br>
+                </div>
+                <div class="form-group">
+                  <h3>Facebook</h3>
+                  <input name="FOOFacebook" disabled type="text" id="FOOFacebook" class="form-control" required="required" value="<?php echo $vFoo[4]; ?>">
                   <br>
                 </div>
                 <div class="form-group">
                   <h3>Linkedln</h3>
-                  <input name="USUTelefono" disabled type="text" id="USUTelefono" class="form-control" required="required" value="<?php echo $vUsu[4]; ?>">
+                  <input name="FOOLinkedln" disabled type="text" id="FOOLinkedln" class="form-control" required="required" value="<?php echo $vFoo[5]; ?>">
                   <br>
                 </div>
                 <div class="form-group">
-                  <h3>Genero del Usuario</h3>
-                  <input name="USUSexo" disabled type="text" id="USUSexo" class="form-control" required="required" value="<?php echo $vUsu[5]; ?>">
+                  <h3>Twitter</h3>
+                  <input name="FOOTwister" disabled type="text" id="FOOTwister" class="form-control" required="required" value="<?php echo $vFoo[6]; ?>">
+                  <br>
+                </div>
+                <div class="form-group">
+                  <h3>Instagram</h3>
+                  <input name="FOOInstagram" disabled type="text" id="FOOInstagram" class="form-control" required="required" value="<?php echo $vFoo[7]; ?>">
                   <br>
                 </div>
                 <input type="hidden" value="<?php echo $id; ?>" name="FOOid">
-                         
+
               </form>
             </div>
           </body>

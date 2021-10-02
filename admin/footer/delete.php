@@ -6,7 +6,7 @@
 </head>
 <?php 
 include("../../conexion.php");
-$conexion->query("DELETE FROM usuario WHERE USUid =".$_GET['USUid']."'");
+$conexion->query("DELETE FROM footer WHERE FOOid =".$_GET['FOOid']."'");
 ?>
 <body>
 </body>

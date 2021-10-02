@@ -2,19 +2,20 @@
 <?php 
 include("../../conexion.php");
 
-$USUid=$_POST['USUid'];
-$USUNombre=$_POST['USUNombre'];
-$USUIdentificacion=$_POST['USUIdentificacion'];
-$USUCorreo=$_POST['USUCorreo'];
-$USUTelefono=$_POST['USUTelefono'];
-$USUSexo=$_POST['USUSexo'];
-$INTid=$_POST['INTid'];
+$FOOid=$_POST['FOOid'];
+$FOODireccion=$_POST['FOODireccion'];
+$FOOTelefono=$_POST['FOOTelefono'];
+$FOOCorreo=$_POST['FOOCorreo'];
+$FOOFacebook=$_POST['FOOFacebook'];
+$FOOLinkedln=$_POST['FOOLinkedln'];
+$FOOTwister=$_POST['FOOTwister'];
+$FOOInstagram=$_POST['FOOInstagram'];
 
 
-$sql="UPDATE usuario SET USUNombre = '$USUNombre',USUIdentificacion = '$USUIdentificacion',USUCorreo = '$USUCorreo',
-USUTelefono = '$USUTelefono',USUSexo = '$USUSexo', INTid = '$INTid' WHERE USUid  = '".$_POST["USUid"]."'";
+
+$sql="UPDATE footer SET FOODireccion = '$FOODireccion',FOOTelefono = '$FOOTelefono',FOOCorreo = '$FOOCorreo',
+FOOFacebook = '$FOOFacebook',FOOLinkedln = '$FOOLinkedln', FOOTwister = '$FOOTwister', FOOInstagram = '$FOOInstagram' WHERE FOOid  = '".$_POST["FOOid"]."'";
 $resultado = $conexion->query($sql);
 $id_insert = $conexion->insert_id;
-
 header("Location: index.php");
 ?>
