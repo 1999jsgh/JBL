@@ -6,7 +6,7 @@
     </head>
     <?php
     include("../../conexion.php");
-    $conexion->query("DELETE FROM venta WHERE VENid = '" . $_GET['VENid'] . "'");
+    $conexion->query("DELETE FROM banner WHERE BANid = '" . $_GET['BANid'] . "'");
     ?>
     <body>
     </body>

@@ -27,14 +27,12 @@
                 <!-- Content -->
                 <?php
                 include("../../conexion.php");
-                $RSEmp = mysqli_query($conexion, "SELECT * FROM venta");
+                $RSEmp = mysqli_query($conexion, "SELECT * FROM banner");
                 $NumEmp = mysqli_num_rows($RSEmp);
-                $RSTip = mysqli_query($conexion, "SELECT * FROM tipoventas");
-                $NumTip = mysqli_num_rows($RSTip);
                 ?>
                 <div class="container">
                     <div class="btn-group">
-                        <h1>Gestionar Venta</h1>
+                        <h1>Gestionar Banner</h1>
                         <div>
                             <a href="add.php" class="button big">Agregar</a></p>
                         </div>
@@ -52,53 +50,34 @@
                                     <h3>Actualizar </h3>
                                 </td>
                                 <td align="center">
-                                    <h3>Tipo de Venta </h3>
+                                    <h3>Titulo</h3>
                                 </td>
-                                <td align="center">
-                                    <h3>Titulo </h3>
-                                </td>
-                                <td align="center">
-                                    <h3>Fecha </h3>
-                                </td>
-                                
                             </tr>
                         </thead>
                         <?php
                         if ($NumEmp != 0) {
                             while ($vEmp = mysqli_fetch_row($RSEmp)) {
-                                $RSPro = mysqli_query($conexion, "SELECT * FROM tipoventas WHERE TIPid  = '" . $vEmp[1] . "'");
-                                $NumPro = mysqli_num_rows($RSPro);
-                                if ($NumPro != 0) {
-                                    $vPro = mysqli_fetch_row($RSPro);
-                                }
                         ?>
                                 <tbody>
                                     <tr>
                                     <td align="center">
-                                            <a href="show.php?VENid=<?php echo $vEmp[0] ?>" class="button big">
+                                            <a href="show.php?BANid=<?php echo $vEmp[0] ?>" class="button big">
                                                 <i class="fas fa-eye"></i>
                                             </a>
                                         </td>
                                         <td align="center">
-                                            <a href="delete.php?VENid=<?php echo $vEmp[0] ?>" class="button big">
+                                            <a href="delete.php?BANid=<?php echo $vEmp[0] ?>" class="button big">
                                                 <i class="fas fa-trash"></i>
                                             </a>
                                         </td>
                                         <td align="center">
-                                            <a href="edit.php?VENid=<?php echo $vEmp[0] ?>" class="button big">
+                                            <a href="edit.php?BANid=<?php echo $vEmp[0] ?>" class="button big">
                                                 <i class="fas fa-edit"></i>
                                             </a>
                                         </td>
                                         <td align="center">
-                                            <div align="center"><?php echo $vPro[1] ?></div>
+                                            <div align="center"><?php echo $vEmp[1] ?></div>
                                         </td>
-                                        <td align="center">
-                                            <div align="center"><?php echo $vEmp[2] ?></div>
-                                        </td>
-                                        <td align="center">
-                                            <div align="center"><?php echo $vEmp[3] ?></div>
-                                        </td>
-                                       
                                     </tr>
                                 </tbody>
                         <?php
