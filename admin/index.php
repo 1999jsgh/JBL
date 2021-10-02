@@ -96,7 +96,7 @@ if ($varsesion == null || $varsesion = '') {
 
                 <!-- Search -->
                 <section id="search" class="alt">
-                    <h3>Bienvenido, <?php echo $_SESSION['NombreADMIN']; ?></h3>
+             <!--       <h3>Bienvenido, <?php echo $_SESSION['NombreADMIN']; ?></h3>-->
                 </section>
 
                 <!-- Menu -->
