@@ -118,7 +118,7 @@ if ($varsesion == null || $varsesion = '') {
                                 </a>
                             </li>
                             <li>
-                                <a href="../admin/int/index.php">
+                                <a href="../admin/por/index.php">
                                     Portafolio
                                 </a>
                             </li>

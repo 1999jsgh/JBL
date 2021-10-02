@@ -3,7 +3,7 @@
 
         <!-- Search -->
         <section id="search" class="alt">
-            <h3>Bienvenido, <?php echo $_SESSION['NombreADMIN']; ?></h3>
+     <!--       <h3>Bienvenido, <?php echo $_SESSION['NombreADMIN']; ?></h3>-->
         </section>
 
         <!-- Menu -->
@@ -25,7 +25,7 @@
                             </a>
                         </li>
                         <li  class="nav-item">
-                            <a class="nav-link" href="../int/index.php">
+                            <a class="nav-link" href="../por/index.php">
                             Portafolio
                             </a>
                         </li>
