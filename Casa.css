@@ -4,12 +4,13 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 749px;
+  min-height: 921px;
 }
 
 .u-section-1 .u-group-1 {
-  width: 722px;
-  min-height: 417px;
+  width: 868px;
+  min-height: 589px;
+  height: auto;
   margin: 166px auto 166px 0;
 }
 
@@ -27,7 +28,7 @@
 .u-section-1 .u-text-2 {
   font-size: 1.25rem;
   line-height: 1.4;
-  margin: 34px 210px 0 0;
+  margin: 34px 356px 0 0;
 }
 
 .u-section-1 .u-line-1 {
@@ -44,6 +45,7 @@
 
   .u-section-1 .u-group-1 {
     width: 595px;
+    height: auto;
   }
 
   .u-section-1 .u-container-layout-1 {
