@@ -15,7 +15,7 @@
                 <tr>
                     <ul>
                         <li class="nav-link" class="nav-item">
-                            <a href="../usu/index.php">
+                            <a href="../ban/index.php">
                             Banner
                             </a>
                         </li>
@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../nav/index.php">
+                            <a class="nav-link" href="../som/index.php">
                             Somos
                             </a>
                         </li>

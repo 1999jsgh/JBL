@@ -25,42 +25,51 @@
                     <!-- Content -->
                     <?php
                     include("../../conexion.php");
-                    $id = $_GET['SIDid'];
-                    $con = "SELECT * FROM sidebar where SIDid='" . $id . "'";
+                    $id = $_GET['PORid'];
+                    $con = "SELECT * FROM portafolio where PORid='" . $id . "'";
                     $act = mysqli_query($conexion, $con);
                     $datos = mysqli_num_rows($act);
                     if ($datos != 0) {
-                        $vCli = mysqli_fetch_row($act);
+                        $vEmp = mysqli_fetch_row($act);
                         ?>
                         <div class="container">
                             <form class="ap"  method="POST" action="update.php" enctype="multipart/form-data">
-                                <h1>Actualizar Sidebar</h1>
-                                <input type="hidden" value="<?php echo $id; ?>" name="SIDid">
+                                <h1>Actualizar Banner</h1>
+                                <input type="hidden" value="<?php echo $id; ?>" name="PORid">
                                 <div class="form-group">
-                                    <h3>Titulo</h3>
-                                    <input name="SIDTitulo" type="text" id="SIDTitulo" placeholder="Nombre del Proveedor" class="form-control" required="required" class="form-control" value="<?php echo $vCli[1]; ?>">
+                                    <h3>Portafolio</h3>
+                                    <textarea name="PORPortafolio" type="text"  id="PORPortafolio" placeholder="&#191;En que consiste nuestro portafolio&#63;" class="form-control" required="required" class="form-control"><?php echo $vEmp[1]; ?></textarea>
+                                    </br>
+                                </div>
+                                <div class="form-group">
+                                    <h3>Centrarse</h3>
+                                    <textarea name="PORCentrarse" type="text"  id="PORCentrarse" placeholder="&#191;En que centrarse con nosotros&#63;" class="form-control" required="required" class="form-control"><?php echo $vEmp[2]; ?></textarea>
                                     </br>
                                 </div>
                                 <div class="col-xs-12">
-                                <label>Imagen/Foto</label>
+                                <label>Foto grande del portafolio</label>
                                     <div class="form-group">
-                                        <input type="file" name="SIDImagen">
+                                        <input type="file" name="PORImagen1">
                                         <p class="text-center text-primary">
                                             No es necesario actualizar la Imagen/Foto del producto, sin embargo si desea actualizarla seleccione una en el siguiente campo. Formato de imágenes admitido png y jpg. Tamaño máximo 5MB</p>
                                     </div>
                                 </div>
-                                <br></br>   
-                                <div class="form-group">
-                                    <h3>Link</h3>
-                                    <input name="SIDLink" type="text" id="SIDLink" placeholder="Nombre del Proveedor" class="form-control" required="required" class="form-control" value="<?php echo $vCli[3]; ?>">
-                                    </br>
-                                </div>                            
+                                <br></br> 
+                                <div class="col-xs-12">
+                                <label>Foto pequeña del portafolio</label>
+                                    <div class="form-group">
+                                        <input type="file" name="PORImagen2">
+                                        <p class="text-center text-primary">
+                                            No es necesario actualizar la Imagen/Foto del producto, sin embargo si desea actualizarla seleccione una en el siguiente campo. Formato de imágenes admitido png y jpg. Tamaño máximo 5MB</p>
+                                    </div>
+                                </div>
+                                <br></br> 
                                 <div class="form-group">
                                     <input type="submit" name="Submit" value="Guardar" class="btn btn-primary" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <h3></h3>
-                                    <input name="SIDid" type="hidden" id="SIDid" class="form-control" required="required" class="form-control" value="<?php echo $id; ?>">
+                                    <label></label>
+                                    <input name="PORid" type="hidden" id="PORid"  value="<?php echo $id; ?>">
                                 </div>
                             </form>
                         </div>

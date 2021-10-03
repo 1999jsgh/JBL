@@ -25,8 +25,8 @@
                     <!-- Content -->
                     <?php
                     include("../../conexion.php");
-                    $id = $_GET['BANid'];
-                    $con = "SELECT * FROM banner where BANid='" . $id . "'";
+                    $id = $_GET['PORid'];
+                    $con = "SELECT * FROM portafolio where PORid='" . $id . "'";
                     $act = mysqli_query($conexion, $con);
                     $datos = mysqli_num_rows($act);
                     if ($datos != 0) {
@@ -34,26 +34,31 @@
                         ?>
                         <div class="container">
                             <form class="ap"  method="POST" action="update.php" enctype="multipart/form-data">
-                                <h1>Mostrar Banner</h1>
-                                <input type="hidden" value="<?php echo $id; ?>" name="BANid">
+                                <h1>Mostrar Portafolio</h1>
+                                <input type="hidden" value="<?php echo $id; ?>" name="PORid">
                                 <div class="form-group">
-                                    <h3>Titulo</h3>
-                                    <input name="BANTitulo" type="text" id="BANTitulo" disabled placeholder="Titulo de la plataforma" class="form-control" required="required" class="form-control" value="<?php echo $vEmp[1]; ?>">
+                                    <h3>Portafolio</h3>
+                                    <textarea name="PORPortafolio" type="text" disabled id="PORPortafolio" placeholder="&#191;En que consiste nuestro portafolio&#63;" class="form-control" required="required" class="form-control"><?php echo $vEmp[1]; ?></textarea>
+                                    </br>
+                                </div>
+                                <div class="form-group">
+                                    <h3>Centrarse</h3>
+                                    <textarea name="PORCentrarse" type="text" disabled id="PORCentrarse" placeholder="&#191;En que centrarse con nosotros&#63;" class="form-control" required="required" class="form-control"><?php echo $vEmp[2]; ?></textarea>
                                     </br>
                                 </div>
                                 <div class="col-xs-12">
-                                <label>Foto del fondo</label>
-                                <img style="width:300px; height:300px;" src="../ban/archivos/<?php if ($vEmp['0'] != "") {
-                                                                                  echo $vEmp['2'];
+                                <label>Foto grande del portafolio</label>
+                                <img style="width:300px; height:300px;" src="../por/archivos/<?php if ($vEmp['0'] != "") {
+                                                                                  echo $vEmp['3'];
                                                                                 } else {
                                                                                   echo "default.png";
                                                                                 } ?>">
                                 </div>
                                 <br></br> 
                                 <div class="col-xs-12">
-                                <label>Foto del logo</label>
-                                <img style="width:300px; height:300px;" src="../ban/archivos/<?php if ($vEmp['0'] != "") {
-                                                                                  echo $vEmp['3'];
+                                <label>Foto pequeña del portafolio</label>
+                                <img style="width:300px; height:300px;" src="../por/archivos/<?php if ($vEmp['0'] != "") {
+                                                                                  echo $vEmp['4'];
                                                                                 } else {
                                                                                   echo "default.png";
                                                                                 } ?>">

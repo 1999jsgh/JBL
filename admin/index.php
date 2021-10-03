@@ -108,7 +108,7 @@ if ($varsesion == null || $varsesion = '') {
                         <tr>
                         <ul>
                             <li>
-                                <a href="../admin/usu/index.php">
+                                <a href="../admin/ban/index.php">
                                     Banner
                                 </a>
                             </li>
@@ -123,7 +123,7 @@ if ($varsesion == null || $varsesion = '') {
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../admin/nav/index.php">
+                                <a class="nav-link" href="../admin/som/index.php">
                                     Somos
                                 </a>
                             </li>                      

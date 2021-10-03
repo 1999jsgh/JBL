@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title>Cliente</title>
+        <title>Portafolio</title>
     </head>
     <?php
     include("../../conexion.php");
-    $conexion->query("DELETE FROM navbar WHERE NAVid = '" . $_GET['NAVid'] . "'");
+    $conexion->query("DELETE FROM portafolio WHERE PORid = '" . $_GET['PORid'] . "'");
     ?>
     <body>
     </body>

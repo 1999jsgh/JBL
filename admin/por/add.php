@@ -16,24 +16,34 @@
             <!-- Main -->
             <div id="main">
                 <div class="inner">
-
-                    <!-- Header -->
-                    <?php
-                    include '../header.php';
-                    ?>
-
                     <!-- Content -->
-
                     <div class="container">
                         <form class="ap" method="post" action="insert.php" enctype="multipart/form-data">
-                            <h1>Registrar Tipo de Noticia</h1>
-                            <div class="form-group">
-                                <h3>Tipo de Noticia </h3>
-                                <input name="TIPNTipoNoticia" type="text" id="TIPNTipoNoticia" placeholder="Nombre del Tipo de Noticia" class="form-control" required="required"
-                                       class="form-control">
+                            <h1>Registrar Portafolio</h1>
+                        <div class="form-group">
+                                <h3>Portafolio</h3>
+                                <textarea name="PORPortafolio" type="text" id="PORPortafolio" placeholder=""  required="required"
+                                       class="form-control"> &#191;En que consiste nuestro portafolio&#63; </textarea>
                                 </br>
-                            </div>                                                  
-                          
+                        </div>
+                        <div class="form-group">
+                                <h3>Centrarse</h3>
+                                <textarea name="PORCentrarse" type="text" id="PORCentrarse" placeholder=""  required="required"
+                                       class="form-control"> &#191;En que centrarse con nosotros&#63; </textarea>
+                                </br>
+                        </div>
+                        <div class="form-group">
+                            <h3>Foto grande del portafolio</h3>
+                            <input name="PORImagen1" type="file" id="PORImagen1"  class="form-control">
+                            </br>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <h3>Foto pequeña del portafolio</h3>
+                            <input name="PORImagen2" type="file" id="PORImagen2"  class="form-control">
+                            </br>
+                            <br>
+                        </div>
                             <div class="form-group">
                                 <input type="submit" name="Submit" value="Guardar" class="btn btn-primary" required="required" />
                             </div>

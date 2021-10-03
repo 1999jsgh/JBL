@@ -11,7 +11,7 @@ $RSReq = mysqli_query($conexion, "SELECT BANid FROM banner");
 $NumReq = mysqli_fetch_row($RSReq);
 
 
-if($BANFondo!="" && $c!=""){
+if($BANFondo!="" && $BANLogo!=""){
         chmod('../ban/archivos/', 0777);
         $fondoFondo="BANFondo_update".($BANid).".png";
         $fondoLogo="BANLogo_update".($BANid).".png";
