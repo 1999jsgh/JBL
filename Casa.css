@@ -355,6 +355,8 @@
 .u-section-3 .u-icon-2 {
   height: 80px;
   width: 80px;
+  color: rgb(255, 255, 255) !important;
+
   background-image: none;
   margin: 24px auto 0;
 }
@@ -377,6 +379,8 @@
 .u-section-3 .u-icon-3 {
   height: 80px;
   width: 80px;
+  color: rgb(255, 255, 255) !important;
+
   background-image: none;
   margin: 24px auto 0;
 }
@@ -399,6 +403,8 @@
 .u-section-3 .u-icon-4 {
   height: 80px;
   width: 80px;
+  color: rgb(255, 255, 255) !important;
+
   background-image: none;
   margin: 24px auto 0;
 }
@@ -786,6 +792,8 @@
 .u-section-6 .u-icon-2 {
   width: 40px;
   height: 39px;
+  color: rgb(255, 255, 255) !important;
+
   background-image: none;
   margin: -38px 90px 0 1010px;
 }
@@ -793,6 +801,8 @@
 .u-section-6 .u-icon-3 {
   width: 40px;
   height: 39px;
+  color: rgb(255, 255, 255) !important;
+
   background-image: none;
   margin: -40px 161px 0 939px;
 }
@@ -801,6 +811,8 @@
   width: 40px;
   height: 40px;
   background-image: none;
+  color: rgb(255, 255, 255) !important;
+
   margin: -39px 238px 0 862px;
 }
 
@@ -906,5 +918,9 @@
   .u-section-6 .u-icon-4 {
     margin-right: 113px;
     margin-left: 257px;
+  }
+  .porfa{
+    color: #ffffff;
+    background-color: #ffffff;
   }
 }
