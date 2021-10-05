@@ -73,7 +73,12 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-clearfix u-image u-shading u-section-1" id="carousel_cc46">
+    <section class="u-clearfix u-image u-shading" id="carousel_cc46">
+    <img  class="" style="width:1700px; height:570px;" src="admin/ban/archivos/<?php if ($vBan['0'] != "") {
+                                                                                  echo $vBan['2'];
+                                                                                } else {
+                                                                                  echo "default.png";
+                                                                                } ?>">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-container-layout-1">
@@ -103,14 +108,24 @@
               </div>
               <div class="u-size-20 u-size-30-md">
                 <div class="u-layout-row">
-                  <div class="u-container-style u-image u-layout-cell u-size-60 u-image-1">
+                  <div class="u-container-style u-image u-layout-cell">
+                  <img  style="width:360px; height:800px;" src="admin/por/archivos/<?php if ($vPor['0'] != "") {
+                                                                                  echo $vPor['3'];
+                                                                                } else {
+                                                                                  echo "default.png";
+                                                                                } ?>">
                     <div class="u-container-layout"></div>
                   </div>
                 </div>
               </div>
               <div class="u-size-20 u-size-60-md">
                 <div class="u-layout-col">
-                  <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-2">
+                  <div class="u-container-style u-image u-layout-cell u-right-cell  ">
+                  <img  style="width:500px; height:300px;" src="admin/por/archivos/<?php if ($vPor['0'] != "") {
+                                                                                  echo $vPor['3'];
+                                                                                } else {
+                                                                                  echo "default.png";
+                                                                                } ?>">
                     <div class="u-container-layout u-container-layout-3"></div>
                   </div>
                   <div class="u-align-center u-container-style u-custom-color-2 u-layout-cell u-right-cell u-size-30 u-layout-cell-4">
