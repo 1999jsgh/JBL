@@ -73,22 +73,24 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-clearfix u-image u-shading" id="carousel_cc46">
-    <img  class="" style="width:1700px; height:570px;" src="admin/ban/archivos/<?php if ($vBan['0'] != "") {
+    <section class="u-clearfix u-image u-shading" id="carousel_cc46" >
+      <div class="container">
+    <img style="width:1700px; height:570px; background-color:rgba(160,54,234,0.65)" src="admin/ban/archivos/<?php if ($vBan['0'] != "") {
                                                                                   echo $vBan['2'];
                                                                                 } else {
                                                                                   echo "default.png";
                                                                                 } ?>">
-      <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="centered">
         <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-container-layout-1">
-            <h1 class="u-custom-font u-text u-title u-text-1"><b><?php echo $vBan[1];?></b>
+            <h1 class="centered"><b><?php echo $vBan[1];?></b>
             </h1>
-            <h3 class="u-text u-text-2">Gestionando la transformacion de su Empresa</h3>
-            <div class="u-border-16 u-border-white u-line u-line-horizontal u-line-1"></div>
+            <h3 class="centered">Gestionando la transformacion de su Empresa</h3>
+            <div class="centered"></div>
           </div>
         </div>
       </div>
+    </div>
     </section>
     <section class="u-clearfix u-grey-5 u-section-2" id="carousel_972b">
       <div class="u-clearfix u-sheet u-sheet-1">
