@@ -33,9 +33,7 @@
                 <div class="container">
                     <div class="btn-group">
                         <h1>Gestionar Portafolio</h1>
-                        <div>
-                            <a href="add.php" class="button big">Agregar</a></p>
-                        </div>
+                     
                     </div>
                     <table align="center" class="table table-hover">
                         <thead class="color">
@@ -43,9 +41,7 @@
                             <td align="center">
                                     <h3>Mostrar</h3>
                                 </td>
-                                <td align="center">
-                                    <h3>Eliminar</h3>
-                                </td>
+                              
                                 <td align="center">
                                     <h3>Actualizar </h3>
                                 </td>
@@ -68,11 +64,7 @@
                                                 <i class="fas fa-eye"></i>
                                             </a>
                                         </td>
-                                        <td align="center">
-                                            <a href="delete.php?PORid=<?php echo $vEmp[0] ?>" class="button big">
-                                                <i class="fas fa-trash"></i>
-                                            </a>
-                                        </td>
+                                  
                                         <td align="center">
                                             <a href="edit.php?PORid=<?php echo $vEmp[0] ?>" class="button big">
                                                 <i class="fas fa-edit"></i>

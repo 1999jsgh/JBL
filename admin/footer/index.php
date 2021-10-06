@@ -37,9 +37,7 @@
           <div class="container">
             <div class="btn-group">
               <h1>Gestionar de Footer</h1>
-              <div>
-                <a href="add.php" class="button big">Agregar</a></p>
-              </div>
+             
             </div>
             <table align="center" class="table table-hover">
               <thead class="color">
@@ -47,9 +45,7 @@
                   <td>
                     <h3>Mostrar</h3>
                   </td>
-                  <td>
-                    <h3>Eliminar</h3>
-                  </td>
+               
                   <td>
                     <h3>Actualizar</h3>
                   </td>
@@ -74,11 +70,7 @@
                           <i class="fas fa-eye"></i>
                         </a>
                       </td>
-                      <td>
-                        <a href="delete.php?FOOid=<?php echo $vFoo[0] ?>" class="button big">
-                          <i class="fas fa-trash"></i>
-                        </a>
-                      </td>
+                   
                       <td>
                         <a href="edit.php?FOOid=<?php echo $vFoo[0] ?>" class="button big">
                           <i class="fas fa-edit"></i>

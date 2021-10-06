@@ -33,9 +33,7 @@
                     <div class="container">
                         <div class="btn-group">
                             <h1>Gestionar &#191; qui&eacute;n somos &#63;</h1>
-                            <div>
-                                <a href="add.php" class="button big">Agregar</a></p>
-                            </div>
+                           
                         </div>
                         <table class="table table-hover">
                             <thead class="color">

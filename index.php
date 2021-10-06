@@ -42,7 +42,11 @@
   </head>
   <body data-home-page="Casa.html" data-home-page-title="Casa" class="u-body"><header class="u-clearfix u-header u-header" id="sec-dfa6"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+        <img style="width:90px; height:40px;" src="admin/ban/archivos/<?php if ($vBan['0'] != "") {
+                                                                                  echo $vBan['3'];
+                                                                                } else {
+                                                                                  echo "default.png";
+                                                                                } ?>">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
