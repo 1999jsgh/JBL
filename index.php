@@ -48,11 +48,7 @@
   <header class="u-clearfix u-header u-header" id="sec-dfa6">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <a href="http://localhost/jbl/JBL/" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-        <img style="width:90px; height:40px;" src="admin/ban/archivos/<?php if ($vBan['0'] != "") {
-                                                                        echo $vBan['3'];
-                                                                      } else {
-                                                                        echo "default.png";
-                                                                      } ?>">
+    
       </a>
       <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
         <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -138,7 +134,7 @@
             <div class="u-size-20 u-size-30-md">
               <div class="u-layout-row">
                 <div class="u-container-style u-image u-layout-cell">
-                  <img style="width:360px; height:800px;" src="admin/por/archivos/<?php if ($vPor['0'] != "") {
+                  <img style="width:360px; height:700px;" src="admin/por/archivos/<?php if ($vPor['0'] != "") {
                                                                                     echo $vPor['3'];
                                                                                   } else {
                                                                                     echo "default.png";
@@ -150,8 +146,8 @@
             <div class="u-size-20 u-size-60-md">
               <div class="u-layout-col">
                 <div class="u-container-style u-image u-layout-cell u-right-cell  ">
-                  <img style="width:500px; height:300px;" src="admin/por/archivos/<?php if ($vPor['0'] != "") {
-                                                                                    echo $vPor['3'];
+                  <img style="width:360px; height:300px;" src="admin/por/archivos/<?php if ($vPor['0'] != "") {
+                                                                                    echo $vPor['4'];
                                                                                   } else {
                                                                                     echo "default.png";
                                                                                   } ?>">
