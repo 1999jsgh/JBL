@@ -29,7 +29,7 @@
                         <p>JBL</p>
                     </div>
                     <div class="caja1-titulo">
-                        <h1></h1>
+                        <h1>Consultoría e Inversiones</h1>
                     </div>
 
                     <div class="selectForm">
@@ -58,9 +58,6 @@
                             <label for="contra" class="texto">Contraseña</label>
                             <input type="password" id="clave" name="clave" placeholder="Contraseña" required>
                         </div>
-
-                        <input name="rol" type="radio" value="1" checked="checked">Administrador&nbsp;
-                        <input name="rol" type="radio" value="2" checked="checked">Vendedor&nbsp;
                         </br>
                         <input type="submit" value="Iniciar Sesión" class="boton">
                     </form>

@@ -16,7 +16,6 @@ if ($varsesion == null || $varsesion = '') {
 <head>
     <title>JBL</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="img/icono.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
@@ -46,7 +45,7 @@ if ($varsesion == null || $varsesion = '') {
 
                     </div>
                     <span class="image object">
-                        <img src="img/LogoGrande.png" style="width:300px; height:300px;" />
+                        <img src="img/LogoGrande.png" style="width:250px; height:250px;" />
                     </span>
                 </section>
 
