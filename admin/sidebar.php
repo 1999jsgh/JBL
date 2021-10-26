@@ -1,9 +1,18 @@
 <div id="sidebar">
     <div class="inner">
+    <?php
+
+session_start();
+$varsesion = $_SESSION['admin'];
+if($varsesion == null || $varsesion =''){
+echo 'No ha Iniciado Sesion';
+die();
+}
+
+?>
 
         <!-- Search -->
         <section id="search" class="alt">
-     <!--       <h3>Bienvenido, <?php echo $_SESSION['NombreADMIN']; ?></h3>-->
         </section>
 
         <!-- Menu -->
